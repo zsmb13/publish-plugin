@@ -98,8 +98,12 @@ dependencies {
 }
 
 stutter {
+    isSparse = (findProperty("stutter.sparce")?.toString()?.toBoolean()) ?: true
     java(8) {
         compatibleRange("4.10")
+    }
+    java(12) {
+        compatibleRange("6.0")
     }
 }
 
