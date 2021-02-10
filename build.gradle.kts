@@ -41,7 +41,6 @@ gradlePlugin {
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 val licenseHeaderFile = file("gradle/license-header.txt")
